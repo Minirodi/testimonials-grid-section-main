@@ -72,6 +72,14 @@ main{
 .first{ 
     background-color:hsl(263, 55%, 52%);
     grid-area: first;
+    
+}
+.quotation{
+    background-image:url('images/bg-pattern-quotation.svg');
+    background-position:right 10% top 0;
+    background-repeat:no-repeat;
+    background-size:150px;
+
 }
 .second{   
     background-color:hsl(217, 19%, 35%);
