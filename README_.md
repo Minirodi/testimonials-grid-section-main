@@ -12,13 +12,13 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL:(https://github.com/Minirodi/testimonials-grid-section-main)
+- Live Site URL:(https://minirodi.github.io/testimonials-grid-section-main/)
 
 ## My process
 
 - first step: establishing the HTMl 
-- second step: find class
+- second step: find classes
 - third step: CSS (mobile first)
 - fourth step: Add/change class if necessary
 - fifth step: media queries
