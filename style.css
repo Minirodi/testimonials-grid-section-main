@@ -1,0 +1,121 @@
+:root{
+    --white:hsl(0, 0%, 100%);
+
+    --clr-neutral-1:hsl(0, 0%, 81%);
+    --clr-neutral-2:hsl(210, 46%, 95%);
+}
+
+@font-family{font-family: 'Barlow Semi Condensed', sans-serif;}
+
+img{
+    max-width:100%;
+}
+*{
+    box-sizing:border-box;
+}
+body{
+    margin:3rem;
+    background-color:var(--clr-neutral-1);
+}
+h2{
+    font-family:'Barlow Semi Condensed', sans-serif;
+    font-weight:600;
+    color:var(--white);
+}
+p{
+    font-family:'Barlow Semi Condensed', sans-serif;
+    font-weight:500;
+    font-size:1em;
+    color:var(--clr-neutral-1);
+    opacity:0.7;
+}
+.title{
+    line-height:0.5rem;
+}
+.name{
+    color:var(--white);    
+}
+.verified{
+    color:var(--white);
+    opacity:0.5;
+}
+main{
+    display:grid;
+    place-items:center;
+    grid-gap:2rem;
+    grid-template-areas: 
+    "first"
+    "second"
+    "third"
+    "fourth"
+    "fifth";
+}
+.img_name{
+    display:flex;
+    align-items:center;
+    gap:1.5rem;
+}
+.img_name img{
+    border-radius:100%;
+    border:3px solid hsl(263, 55%, 52%);
+}
+.container{
+   padding:2rem;
+   border-radius:10px;   
+}
+.white-gray{
+    background-color:var(--white);
+}
+.white-gray p , .white-gray h2 {
+    color:hsl(217, 19%, 35%);
+}
+.first{ 
+    background-color:hsl(263, 55%, 52%);
+    grid-area: first;
+}
+.second{   
+    background-color:hsl(217, 19%, 35%);
+    grid-area: second;
+}
+
+.third{
+    grid-area: third;
+}
+.fourth{  
+    background-color:hsl(219, 29%, 14%);
+    grid-area: fourth;
+}
+
+.fifth{
+    grid-area: fifth;    
+}
+
+
+
+@media (min-width:1251px){
+   body{
+    margin:3rem;
+   }
+    main{
+        grid-template-areas:
+        "first first second fifth"
+        "third fourth fourth fifth";
+        place-items:initial;
+        grid-template-columns: repeat(4,1fr);
+       }
+
+}
+
+@media (max-width: 1250px) and (min-width: 700px) {
+    
+     main{
+         grid-template-areas:
+         "first first"
+         "second fifth"
+         "third fifth"
+         "fourth fourth";
+         place-items:initial;
+         grid-template-columns: repeat(2,1fr);
+        }
+
+ }
